@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 35 30% 96%;
+    --foreground: 25 30% 12%;
+
+    --card: 35 40% 93%;
+    --card-foreground: 25 30% 12%;
+
+    --popover: 35 40% 93%;
+    --popover-foreground: 25 30% 12%;
+
+    --primary: 38 70% 50%;
+    --primary-foreground: 35 30% 98%;
+
+    --secondary: 25 20% 88%;
+    --secondary-foreground: 25 30% 15%;
+
+    --muted: 30 15% 90%;
+    --muted-foreground: 25 10% 45%;
+
+    --accent: 15 60% 55%;
+    --accent-foreground: 35 30% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 20% 82%;
+    --input: 30 20% 85%;
+    --ring: 38 70% 50%;
+
+    --radius: 0.75rem;
+
+    --gold: 38 70% 50%;
+    --gold-light: 40 60% 70%;
+    --gold-dark: 35 75% 35%;
+    --saffron: 25 85% 55%;
+    --maroon: 350 50% 30%;
+    --cream: 38 40% 95%;
+
+    --grid-active: 38 80% 52%;
+    --grid-active-foreground: 35 30% 10%;
+    --grid-inactive: 30 15% 88%;
+    --grid-inactive-foreground: 25 10% 55%;
+
+    --gradient-gold: linear-gradient(135deg, hsl(38 70% 50%), hsl(25 85% 55%));
+    --gradient-warm: linear-gradient(180deg, hsl(35 30% 96%), hsl(35 40% 91%));
+
+    --shadow-gold: 0 4px 20px -4px hsl(38 70% 50% / 0.3);
+    --shadow-card: 0 8px 30px -8px hsl(25 30% 12% / 0.1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: 'Cinzel', serif;
+  }
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+
+
+.no-copy {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
