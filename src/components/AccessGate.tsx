@@ -2,7 +2,7 @@ import { useState } from "react";
 import { isValidCode } from "@/lib/access-code";
 
 
-const OWNER_WHATSAPP = "919826657089"; 
+const OWNER_WHATSAPP = "919826557089"; 
 // ─────────────────────────────────────────
 // User sends their name via WhatsApp.
 // Admin looks up the code in /admin-panel
